@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHOOMPOO | ร้านกระเป๋าไหมพรม</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Prompt",sans-serif;
+}
+
+body{
+    background:#eaf7ff;
+}
+
+header{
+    background:#42a5f5;
+    color:#fff;
+    text-align:center;
+    padding:35px;
+}
+
+header h1{
+    font-size:48px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card h2{
+    color:#2196f3;
+    padding:15px 15px 5px;
+}
+
+.card p{
+    padding:0 15px;
+    color:#555;
+}
+
+.price{
+    color:#ff5722;
+    font-size:28px;
+    font-weight:bold;
+    padding:15px;
+}
+
+button{
+    width:90%;
+    margin:0 5% 20px;
+    padding:15px;
+    background:#2196f3;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1565c0;
+}
+
+footer{
+    margin-top:50px;
+    background:#42a5f5;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🧶 CHOOMPOO</h1>
+<p>ร้านกระเป๋าไหมพรม งานแฮนด์เมด ดีไซน์สวย คุณภาพดี</p>
+</header>
+
+<div class="container">
+
+<div class="products">
+
+<div class="card">
+<img src="bag1.jpg" alt="กระเป๋าไหมพรมรุ่นดอกไม้">
+<h2>Flower Crochet Bag</h2>
+<p>กระเป๋าไหมพรมแต่งดอกไม้ งานถักละเอียด</p>
+<div class="price">฿690</div>
+<button onclick="buy('Flower Crochet Bag')">
+🛒 สั่งซื้อสินค้า
+</button>
+</div>
+
+<div class="card">
+<img src="bag2.jpg" alt="กระเป๋าไหมพรมแฟชั่น">
+<h2>Chunky Knit Bag</h2>
+<p>กระเป๋าไหมพรมแฟชั่น สีพาสเทล</p>
+<div class="price">฿790</div>
+<button onclick="buy('Chunky Knit Bag')">
+🛒 สั่งซื้อสินค้า
+</button>
+</div>
+
+<div class="card">
+<img src="bag3.jpg" alt="กระเป๋าไหมพรมสายรุ้ง">
+<h2>Rainbow Crochet Tote</h2>
+<p>กระเป๋าสะพายไหมพรม สีสันสดใส</p>
+<div class="price">฿590</div>
+<button onclick="buy('Rainbow Crochet Tote')">
+🛒 สั่งซื้อสินค้า
+</button>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<h3>CHOOMPOO</h3>
+<p>📞 โทร : 08X-XXX-XXXX</p>
+<p>💙 กระเป๋าไหมพรมแฮนด์เมดทุกใบ ผลิตด้วยความตั้งใจ</p>
+</footer>
+
+<script>
+function buy(product){
+    alert("คุณเลือกสั่งซื้อ : " + product);
+}
+</script>
+
+</body>
+</html>
